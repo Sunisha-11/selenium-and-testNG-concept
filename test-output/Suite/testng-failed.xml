@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="test(failed)">
+    <classes>
+      <class name="TestNGpractice.TestNGHardAssert">
+        <methods>
+          <include name="initialization"/>
+          <include name="ValidateLoginTests"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestNGpractice.TestNGHardAssert -->
+      <class name="TestNGpractice.ParallelExecution">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initialization"/>
+          <include name="yahooSearchTest"/>
+          <include name="googleSerachTest"/>
+        </methods>
+      </class> <!-- TestNGpractice.ParallelExecution -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
